@@ -1,0 +1,212 @@
+/***** global *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* class layout */
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/***** End global *****/
+
+/***** navber *****/
+.navbar {
+  background-color: #24bfe6;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.navbar .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul {
+  justify-content: flex-start;
+  gap: 30px;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.navbar ul li:hover {
+  background-color: rgb(212, 22, 102);
+  transition: 0.6s;
+}
+/***** End navber *****/
+
+/***** Section *****/
+section {
+  margin-top: 70px;
+}
+/***** End Section *****/
+
+/***** footer *****/
+.footer {
+  background-color: #24bfe6;
+  padding: 15px;
+  color: #fff;
+  height: 120px;
+}
+.footer .d-flex {
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  transition: 0.6s;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+.footer a:hover {
+  background-color: #fff;
+  color: rgb(212, 22, 102);
+}
+
+.footer p {
+  font-size: 18px;
+  text-align: center;
+}
+/***** End footer *****/
+
+/* server*/
+.web {
+  margin-top: 10px;
+  margin-left: 300px;
+  width: 10%;
+  height: 150px;
+  border: green 2px solid;
+  /*display: inline;*/
+}
+.mobile {
+  margin-top: -150px;
+  margin-left: 1100px;
+  width: 10%;
+  height: 150px;
+  border: red 2px solid;
+}
+.desktop {
+  margin-top: 190px;
+  margin-left: 1100px;
+  width: 10%;
+  height: 150px;
+  border: salmon 2px solid;
+}
+.desing {
+  margin-top: -150px;
+  margin-left: 300px;
+  width: 10%;
+  height: 150px;
+  border: rebeccapurple 2px solid;
+}
+/* button serverinfo*/
+
+.any {
+  margin-top: 10px;
+  text-align: center;
+  background-position: 1px;
+  color: white;
+  background-color: rgb(212, 22, 102);
+  padding: 3px 30px 4px 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.any a {
+  text-decoration: none;
+  color: white;
+}
+/*imghome*/
+.imghome {
+  margin-left: 240px;
+  text-align: center;
+}
+/*homeinfo*/
+
+.info {
+  text-align: center;
+}
+
+.e {
+  padding-right: 10%;
+  margin-left: 25px;
+}
+/* order server input*/
+
+.order input {
+  text-align: right;
+  margin-right: 120px;
+}
+.order label {
+  margin-right: -230px;
+}
+.typeserver {
+  margin-right: 120px;
+}
+/* info server*/
+.desktopinfo {
+  width: 80%;
+  height: 3%;
+  margin: 40px auto;
+  border-radius: 7px;
+  background-color: gray;
+  font-size: 19px;
+  padding: 30px;
+}
+/* home mgtquee*/
+.marq {
+  width: 100%;
+  height: 3%;
+  position: fixed;
+  color: black;
+  font-size: large;
+}
+.marq marquee {
+  background-color: initial;
+  color: yellow;
+}
+/*video background*/
+.bgVideo {
+  width: 140vw;
+  height: 140vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.d {
+}
+.how {
+  text-align: center;
+  font-size: xx-large;
+  color: orangered;
+  padding: 30px;
+}
