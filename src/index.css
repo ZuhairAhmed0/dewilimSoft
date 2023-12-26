@@ -1,0 +1,387 @@
+/***** global *****/
+:root {
+  --main-color: #24bfe6;
+  --secondary-color: #d41666;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eee;
+  font-family: Montserrat, sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  color: #494949;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather, sans-serif;
+  font-weight: 700;
+  margin: 0px 0px 10px;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 560px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+/* class layout */
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  padding-top: 45px;
+}
+/***** End global *****/ /***** navber *****/
+.navbar {
+  background-color: var(--main-color);
+  width: 100%;
+  box-shadow: 3px 3px 3px rgba(25, 25, 25, 0.457);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: calc(100% - 200px);
+}
+
+.navbar .logo {
+  text-decoration: none;
+}
+
+.logobar {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.navbar ul li {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul a:hover {
+  background: var(--secondary-color);
+  transition: 0.5s;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.show-navbar {
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar ul {
+    position: fixed;
+    flex-direction: column;
+    top: 90px;
+    text-align: center;
+    width: 100%;
+    background: #24bfe6db;
+    left: 0;
+    overflow: hidden;
+    height: 0px;
+    padding: 0;
+    transition: height 1s;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .show-navbar {
+    display: flex;
+  }
+}
+
+/***** End navber *****/
+/***** Header *****/
+header {
+  background-image: linear-gradient(
+      rgba(43, 48, 60, 0.784),
+      rgba(43, 61, 79, 0.356)
+    ),
+    url("../public/image/home.png");
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.21rem;
+}
+
+/***** About *****/
+
+.about {
+  padding: 50px 0;
+  font-size: 1.1rem;
+}
+
+.about .d-flex {
+  flex-wrap: wrap;
+}
+
+.about .d-flex div {
+  max-width: 600px;
+}
+.about .d-flex img {
+  height: 300px;
+  width: 350px;
+}
+
+/***** End About *****/
+
+/***** services *****/
+.services {
+  padding: 20px 0;
+}
+
+.services figure {
+  height: 350px;
+  width: 100%;
+}
+.services .d-flex {
+  flex-wrap: wrap;
+}
+.services figure img {
+  width: 100%;
+  height: 60%;
+}
+
+.services figure figcaption p {
+  color: #555;
+  line-height: 1.5;
+}
+@media (ax-width: 576px) {
+  .services figure {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .services figure {
+    width: 24%;
+  }
+}
+
+/***** End services *****/
+
+/***** End Header *****/
+
+.footer {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 3rem;
+}
+.footer .d-flex {
+  justify-content: center;
+  gap: 5px;
+  height: 50px;
+}
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: 0.3s;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer p {
+  font-size: 18px;
+  text-align: center;
+}
+/***** End footer *****/
+
+/***** contact *****/
+
+.contact {
+  padding: 90px 0 40px;
+}
+.contact .d-flex {
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact .d-flex div {
+  background-color: #fff;
+  padding: 20px;
+  height: 180px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  line-height: 1.7;
+}
+
+.contact .d-flex div svg {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+/***** End contact *****/
+
+/***** search *****/
+
+.blogs {
+  padding: 90px 0 40px;
+}
+
+.search input {
+  width: 80%;
+  height: 40px;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #888;
+}
+.search button {
+  border-radius: 8px 0 0 8px;
+  width: 20%;
+  height: 40px;
+  display: block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/***** End search *****/
+
+/***** Order service *****/
+.order-service {
+  padding: 90px 0 40px;
+}
+
+.order-service h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--secondary-color)
+}
+
+.order-service form {
+  width: 80%;
+  margin: 5px auto;
+}
+
+.order-service :is(input, select) {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 7px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  color: var(--main-color);
+}
+.order-service input:focus {
+  outline: 0;
+  border: 2px solid var(--main-color);
+}
+
+.order-service label {
+  font-size: 1.1rem;
+  margin-bottom: 3px;
+}
+
+.order-service button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px  auto;
+  background-color: var(--secondary-color);
+  color: #fff;
+  display: block;
+}
+/***** End Order service *****/
+
+/***** projects *****/ 
+.projects {
+  padding: 90px 0 40px;
+}
+/***** End projects *****/
+
